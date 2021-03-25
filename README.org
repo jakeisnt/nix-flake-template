@@ -1,0 +1,5 @@
+#+TITLE: Nix Flake Project Template
+
+This is a basic template for starting projects. It provides a basic framework for building a package and exposing its development environment, meant to be used with direnv and nix flakes. If you aren't comfortable with direnv, please use the nix develop command.
+
+Please feel free to open issues and/or send me suggestions for improvement - when it comes to flakes, I'm still a relative beginner!
