@@ -1,9 +1,1 @@
-#+TITLE: Nix Flake Project Template
-
-This is a basic template for starting projects. It provides a basic framework for building a package and exposing its development environment, meant to be used with direnv and nix flakes. If you aren't comfortable with direnv, please use the nix develop command.
-
-To add packages, add them to the array following "with pkgs;" in `default.nix`. `default.nix` should eventually be used to build the entire project, but it's best to start by using it just to power a development shell.
-
-Please feel free to open issues and/or send me suggestions for improvement - when it comes to flakes, I'm still a relative beginner!
-
-Also -- if you want concrete examples, check out some of my other repositories : )
+#+TITLE: Clojure Art

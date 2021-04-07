@@ -1,2 +1,16 @@
 .direnv/*
 !.direnv/.git-keep
+
+/target
+/classes
+/checkouts
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
+figwheel_server.log
+resources/public/js/
+.lsp
+.rebel_readline_history
