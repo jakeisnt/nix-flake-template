@@ -13,5 +13,10 @@
         pkgs = nixpkgs.legacyPackages.${system};
         lib = nixpkgs.lib;
         package = with pkgs; callPackage ./. { inherit pkgs; };
-      in { defaultPackage = package; });
+      in {
+        devShell = pkgs.mkShell {
+          buildInputs = with pkgs; [ ];
+        };
+        defaultPackage = package;
+      });
 }
