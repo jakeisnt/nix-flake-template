@@ -12,11 +12,17 @@
         inherit (lib) attrValues;
         pkgs = nixpkgs.legacyPackages.${system};
         lib = nixpkgs.lib;
-        package = with pkgs; callPackage ./. { inherit pkgs; };
-      in {
-        devShell = pkgs.mkShell {
-          buildInputs = with pkgs; [ ];
+      in rec {
+        packages.hello = pkgs.hello;
+
+        apps.hello = utils.lib.mkApp {
+          drv = packages.hello;
         };
-        defaultPackage = package;
+
+        defaultPackage = packages.hello;
+
+        devShell = with pkgs; mkShell {
+          buildInputs = [ ];
+        };
       });
 }
