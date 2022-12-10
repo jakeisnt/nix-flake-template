@@ -1,5 +1,9 @@
 #+TITLE: Nix Flake Project Template
 
+* Deprecated
+This is out-of date. There are better solutions to this that preserve backwards compatibility now. This one isn't useful!
+
+* Description
 A basic template for starting projects.
 Make sure you have `direnv`, `nix` and `nix-flakes` installed and configured.
 
